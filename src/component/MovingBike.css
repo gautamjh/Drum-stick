@@ -1,0 +1,27 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.car {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    width: 200px;
+    height: 100px;
+    background-color: #ffcc00;
+    transform-origin: center;
+    animation: moveCar 5s linear infinite;
+}
+
+@keyframes moveCar {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: calc(100% + 100px);
+    }
+}
